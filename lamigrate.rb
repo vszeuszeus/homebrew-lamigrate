@@ -5,21 +5,21 @@
 class Lamigrate < Formula
   desc "CLI tool for running staged SQL migrations."
   homepage "https://github.com/vszeuszeus/lamigrate"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.8/lamigrate_0.1.8_darwin_amd64.tar.gz"
-      sha256 "7e3600ce3ec40bcdf2407088ee9a0715c0936f5d1184486f021daccde16e23e0"
+      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.9/lamigrate_0.1.9_darwin_amd64.tar.gz"
+      sha256 "b2496343806fbdd37bca0e912207d552b8cad5311de3bbb42d40bb39ae5d7534"
 
       def install
         bin.install "lamigrate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.8/lamigrate_0.1.8_darwin_arm64.tar.gz"
-      sha256 "fd362682f71e64c7c5f81ae0ddee35f32839e19c93552bcd92fb7998fee048ad"
+      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.9/lamigrate_0.1.9_darwin_arm64.tar.gz"
+      sha256 "27d2f1ca4c7971559c9465f198fecfb650023be391003f1594d43502e20feb16"
 
       def install
         bin.install "lamigrate"
@@ -29,15 +29,15 @@ class Lamigrate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.8/lamigrate_0.1.8_linux_amd64.tar.gz"
-      sha256 "c490bfd33e6e27f170b2b39d594aa272fec20a8066e1cb80a88aa639bed4e5df"
+      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.9/lamigrate_0.1.9_linux_amd64.tar.gz"
+      sha256 "fea9d053066e35987a9a1b0fd7e0f1a310e97d6b356498391d0c1ee4a6c540d7"
       def install
         bin.install "lamigrate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.8/lamigrate_0.1.8_linux_arm64.tar.gz"
-      sha256 "dddfb59f1fd61fb843cfdc80816f7c8460720d000dae66ada319226beaef18fb"
+      url "https://github.com/vszeuszeus/lamigrate/releases/download/v0.1.9/lamigrate_0.1.9_linux_arm64.tar.gz"
+      sha256 "d64e450ef011d8c3e2074f58dae4368c292a981b897dfe5a8b605c8e965923da"
       def install
         bin.install "lamigrate"
       end
